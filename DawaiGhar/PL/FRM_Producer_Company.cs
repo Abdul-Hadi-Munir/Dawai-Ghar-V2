@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -143,12 +143,12 @@ namespace DawaiGhar.PL
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            RPT.RPT_Producer_Company Report = new RPT.RPT_Producer_Company();
+//             RPT.RPT_Producer_Company Report = new RPT.RPT_Producer_Company();
             Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
             Report.Refresh();
             Report.SetParameterValue("@Search", "");
             //**********************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report;
             Report_View.crystalReportViewer1.Zoom(120);
             //**********************************

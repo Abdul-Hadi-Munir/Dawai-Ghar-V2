@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,12 +50,12 @@ namespace DawaiGhar.PL
 
         private void btnPrintSelected_Click(object sender, EventArgs e)
         {
-            RPT.RPT_Purchases Report_Selected = new RPT.RPT_Purchases();
+//             RPT.RPT_Purchases Report_Selected = new RPT.RPT_Purchases();
             Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
             Report_Selected.Refresh();
             Report_Selected.SetParameterValue("@ID", dataGridView1.CurrentRow.Cells[0].Value.ToString());
             //**************************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report_Selected;
             Report_View.crystalReportViewer1.Zoom(120);
             //**************************************

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -226,13 +226,13 @@ namespace DawaiGhar.PL
         private void btnPrint_Click(object sender, EventArgs e)
         {  
 
-            RPT.RPT_Products_All Report = new RPT.RPT_Products_All();
+//             RPT.RPT_Products_All Report = new RPT.RPT_Products_All();
             Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
 
             Report.Refresh();
             Report.SetParameterValue("@Search", "");
             //**************************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report;
             Report_View.crystalReportViewer1.Zoom(120);
             //**************************************
@@ -243,12 +243,12 @@ namespace DawaiGhar.PL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RPT.RPT_Products_Selected Report_Selected = new RPT.RPT_Products_Selected();
+//             RPT.RPT_Products_Selected Report_Selected = new RPT.RPT_Products_Selected();
             Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
             Report_Selected.Refresh();
             Report_Selected.SetParameterValue("@id", dataGridView1.CurrentRow.Cells[0].Value.ToString());
             //**************************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report_Selected;
             Report_View.crystalReportViewer1.Zoom(120);
             //**************************************

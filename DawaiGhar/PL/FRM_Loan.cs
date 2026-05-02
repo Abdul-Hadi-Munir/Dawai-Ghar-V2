@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -155,11 +155,11 @@ namespace DawaiGhar.PL
 
         private void btnPrintAll_Click(object sender, EventArgs e)
         {
-            RPT.RPT_Purchases_Loan_All Report = new RPT.RPT_Purchases_Loan_All();
+//             RPT.RPT_Purchases_Loan_All Report = new RPT.RPT_Purchases_Loan_All();
             Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
             Report.Refresh();
             //***********************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report;
             Report_View.crystalReportViewer1.Zoom(120);
             //***********************************
@@ -174,12 +174,12 @@ namespace DawaiGhar.PL
                 return;
             }
 
-            RPT.RPT_Purchases_Loan_Supplier Report = new RPT.RPT_Purchases_Loan_Supplier();
+//             RPT.RPT_Purchases_Loan_Supplier Report = new RPT.RPT_Purchases_Loan_Supplier();
             Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
             Report.Refresh();
             Report.SetParameterValue("@id", cmbSupplier.SelectedValue);
             //***********************************
-            RPT.Reports Report_View = new RPT.Reports();
+//             RPT.Reports Report_View = new RPT.Reports();
             Report_View.crystalReportViewer1.ReportSource = Report;
             Report_View.crystalReportViewer1.Zoom(120);
             //***********************************
