@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DawaiGhar.BL;
-using CrystalDecisions.Shared;
+// using CrystalDecisions.Shared;
 
 namespace DawaiGhar.PL
 {
@@ -227,16 +227,16 @@ namespace DawaiGhar.PL
         {  
 
 //             RPT.RPT_Products_All Report = new RPT.RPT_Products_All();
-            Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
 
-            Report.Refresh();
-            Report.SetParameterValue("@Search", "");
+// Report.Refresh();
+// Report.SetParameterValue("@Search", "");
             //**************************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report;
+// Report_View.crystalReportViewer1.Zoom(120);
             //**************************************
-            Report_View.Show();
+// Report_View.Show();
 
             Logs.Logs_Add(Program.UserFullName, DateTime.Now.ToString(), "Print All Products");
         }
@@ -244,15 +244,15 @@ namespace DawaiGhar.PL
         private void button1_Click(object sender, EventArgs e)
         {
 //             RPT.RPT_Products_Selected Report_Selected = new RPT.RPT_Products_Selected();
-            Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
-            Report_Selected.Refresh();
-            Report_Selected.SetParameterValue("@id", dataGridView1.CurrentRow.Cells[0].Value.ToString());
+// Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report_Selected.Refresh();
+// Report_Selected.SetParameterValue("@id", dataGridView1.CurrentRow.Cells[0].Value.ToString());
             //**************************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report_Selected;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report_Selected;
+// Report_View.crystalReportViewer1.Zoom(120);
             //**************************************
-            Report_View.Show();
+// Report_View.Show();
 
             Logs.Logs_Add(Program.UserFullName, DateTime.Now.ToString(), "Print Selected Products ID: " + dataGridView1.CurrentRow.Cells[0].Value.ToString());
         }

@@ -40,15 +40,15 @@ namespace DawaiGhar.PL
         private void btnPrintSelected_Click(object sender, EventArgs e)
         {
 //             RPT.RPT_Order Report_Selected = new RPT.RPT_Order();
-            Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
-            Report_Selected.Refresh();
-            Report_Selected.SetParameterValue("@ID", dataGridView1.CurrentRow.Cells[0].Value.ToString());
+// Report_Selected.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report_Selected.Refresh();
+// Report_Selected.SetParameterValue("@ID", dataGridView1.CurrentRow.Cells[0].Value.ToString());
             //**************************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report_Selected;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report_Selected;
+// Report_View.crystalReportViewer1.Zoom(120);
             //**************************************
-            Report_View.Show();
+// Report_View.Show();
 
 
             Logs.Logs_Add(Program.UserFullName, DateTime.Now.ToString(), "Print Selected Order Invoice");

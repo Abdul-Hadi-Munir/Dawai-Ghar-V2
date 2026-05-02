@@ -132,15 +132,15 @@ namespace DawaiGhar.PL
         private void btnPrint_Click(object sender, EventArgs e)
         {
 //             RPT.RPT_Sceintific_Name Report = new RPT.RPT_Sceintific_Name();
-            Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
-            Report.Refresh();
-            Report.SetParameterValue("@Search", "");
+// Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report.Refresh();
+// Report.SetParameterValue("@Search", "");
             //***********************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report;
+// Report_View.crystalReportViewer1.Zoom(120);
             //***********************************
-            Report_View.Show();
+// Report_View.Show();
 
             Logs.Logs_Add(Program.UserFullName, DateTime.Now.ToString(), "Printed Sceintific Name");
         }

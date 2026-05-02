@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -53,10 +53,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    
-    
-    
-    
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
       <Private>True</Private>
@@ -248,96 +244,6 @@
     <Compile Include="PL\FRM_Suppliers.Designer.cs">
       <DependentUpon>FRM_Suppliers.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\RPT\Reports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\Reports.Designer.cs">
-      <DependentUpon>Reports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Customer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Customer.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Order.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Order.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Order_Loan_All.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Order_Loan_All.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Order_Loan_Customer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Order_Loan_Customer.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Producer_Company.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Producer_Company.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Products_All.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Products_All.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Products_Selected.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Products_Selected.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Purchases.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Purchases.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Purchases_Loan_All.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Purchases_Loan_All.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Purchases_Loan_Supplier.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Purchases_Loan_Supplier.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Sceintific_Name.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Sceintific_Name.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Stack_All.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Stack_All.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Stack_Selected.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Stack_Selected.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="PL\RPT\RPT_Supplier.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPT_Supplier.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\DBConfig.resx">
@@ -412,65 +318,6 @@
     <EmbeddedResource Include="PL\FRM_Suppliers.resx">
       <DependentUpon>FRM_Suppliers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\Reports.resx">
-      <DependentUpon>Reports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Customer.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Customer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Order.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Order.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Order_Loan_All.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Order_Loan_All.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Order_Loan_Customer.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Order_Loan_Customer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Producer_Company.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Producer_Company.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Products_All.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Products_All.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Products_Selected.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Products_Selected.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Purchases.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Purchases.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Purchases_Loan_All.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Purchases_Loan_All.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Purchases_Loan_Supplier.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Purchases_Loan_Supplier.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Sceintific_Name.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Sceintific_Name.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Stack_All.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Stack_All.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Stack_Selected.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Stack_Selected.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\RPT\RPT_Supplier.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPT_Supplier.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -496,7 +343,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_free-17_463011.png" />

@@ -154,14 +154,14 @@ namespace DawaiGhar.PL
         private void btnPrintAll_Click(object sender, EventArgs e)
         {
 //             RPT.RPT_Order_Loan_All Report = new RPT.RPT_Order_Loan_All();
-            Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
-            Report.Refresh();
+// Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report.Refresh();
             //***********************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report;
+// Report_View.crystalReportViewer1.Zoom(120);
             //***********************************
-            Report_View.Show();
+// Report_View.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -173,15 +173,15 @@ namespace DawaiGhar.PL
             }
 
 //             RPT.RPT_Order_Loan_Customer Report = new RPT.RPT_Order_Loan_Customer();
-            Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
-            Report.Refresh();
-            Report.SetParameterValue("@id", cmbCustomer.SelectedValue);
+// Report.SetDatabaseLogon(Properties.Settings.Default.Name, Properties.Settings.Default.Pass, Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+// Report.Refresh();
+// Report.SetParameterValue("@id", cmbCustomer.SelectedValue);
             //***********************************
 //             RPT.Reports Report_View = new RPT.Reports();
-            Report_View.crystalReportViewer1.ReportSource = Report;
-            Report_View.crystalReportViewer1.Zoom(120);
+// Report_View.crystalReportViewer1.ReportSource = Report;
+// Report_View.crystalReportViewer1.Zoom(120);
             //***********************************
-            Report_View.Show();
+// Report_View.Show();
         }
     }
 }
